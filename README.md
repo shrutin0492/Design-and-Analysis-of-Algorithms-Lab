@@ -1,56 +1,74 @@
-**Design-and-Analysis-of-Algorithms-Lab Repository**
+# Design and Analysis of Algorithms Lab
 
-This repository contains a collection of programs as completed as part of the Design and Analysis of Algorithms Laboratory course in the 2nd year of my undergrad.
+This repository contains a collection of programs implemented as part of the Design and Analysis of Algorithms Laboratory course in the 2nd year of my undergrad.
 
-1. **Tower of Hanoi**
-   - File: [1_toh.c](https://github.com/shrutin567/Design-and-Analysis-of-Algorithms-Lab/blob/main/1_toh.c)
-   - Description: This program demonstrates the classic Tower of Hanoi problem using a recursive approach.
+## Program List
 
-2. **Binary Search**
-   - File: [2_binary_search_recursive.c](https://github.com/shrutin567/Design-and-Analysis-of-Algorithms-Lab/blob/main/2_binary_search_recursive.c)
-   - Description: This program implements the binary search algorithm using a recursive approach.
+1. **Tower of Hanoi**: This program demonstrates the classic Tower of Hanoi problem using a recursive approach. It showcases the steps required to solve the puzzle for a given number of disks.
+   - File: [1_toh.c](1_toh.c)
+   
+2. **Binary Search**: This program showcases the binary search algorithm implemented recursively. Given a sorted array and a target element, it efficiently finds the index of the target element in the array.
+   - File: [2_binary_search_recursive.c](2_binary_search_recursive.c)
+   
+3. **Merge Sort**: This program implements the Merge Sort algorithm to efficiently sort an array of elements in non-decreasing order. It demonstrates the divide-and-conquer strategy of merge sorting.
+   - File: [3_merge_sort.c](3_merge_sort.c)
+   
+4. **Quick Sort**: This program implements the Quick Sort algorithm to sort an array of elements. It showcases the efficient in-place partitioning and sorting performed by the algorithm.
+   - File: [4_quick_sort.c](4_quick_sort.c)
+   
+5a. **Prim's Algorithm**: This program implements Prim's algorithm for finding the Minimum Spanning Tree (MST) of a weighted, connected graph. It showcases the greedy approach used by the algorithm.
+   - File: [5a_prims_algorithm.c](5a_prims_algorithm.c)
+   
+5b. **Kruskal's Algorithm**: This program implements Kruskal's algorithm to find the Minimum Spanning Tree (MST) of a connected, weighted graph. It demonstrates the use of disjoint sets (Union-Find) to detect cycles.
+   - File: [5b_kruskals_algorithm.c](5b_kruskals_algorithm.c)
+   
+6. **Dijkstra's Algorithm**: This program showcases Dijkstra's algorithm for finding the shortest path in a weighted graph with non-negative edge weights. It demonstrates the concept of dynamic programming and greedy choices.
+   - File: [6_dijkstras_algorithm.c](6_dijkstras_algorithm.c)
+   
+7. **Integral Knapsack**: This program solves the 0/1 Knapsack problem using the Integral Knapsack dynamic programming approach. It efficiently selects items to maximize the total value within a given weight constraint.
+   - File: [7_integral_knapsack.c](7_integral_knapsack.c)
+   
+8. **Traveling Salesman Problem (Nearest Neighbour)**: This program addresses the Traveling Salesman Problem using the Nearest Neighbour algorithm. It aims to find the shortest possible route that visits all cities exactly once and returns to the starting city.
+   - File: [8_traveling_salesman_problem_nearest_neighbour.c](8_traveling_salesman_problem_nearest_neighbour.c)
+   
+9. **Floyd Warshall Algorithm**: This program implements the Floyd Warshall algorithm for all-pairs shortest path in a weighted graph. It showcases the dynamic programming approach to finding shortest paths.
+    - File: [9_floyd_warshall_algorithm.c](9_floyd_warshall_algorithm.c)
+   
+10. **Longest Common Subsequence (Dynamic Programming)**: This program finds the Longest Common Subsequence (LCS) of two input sequences using dynamic programming. It demonstrates how to efficiently solve this problem using memoization.
+    - File: [10_longest_common_subsequence_dynamic_programming.c](10_longest_common_subsequence_dynamic_programming.c)
 
-3. **Merge Sort**
-   - File: [3_merge_sort.c](https://github.com/shrutin567/Design-and-Analysis-of-Algorithms-Lab/blob/main/3_merge_sort.c)
-   - Description: This program demonstrates the merge sort algorithm for sorting an array.
+## Instructions to Run
 
-4. **Quick Sort**
-   - File: [4_quick_sort.c](https://github.com/shrutin567/Design-and-Analysis-of-Algorithms-Lab/blob/main/4_quick_sort.c)
-   - Description: This program implements the quick sort algorithm to efficiently sort an array.
+### Running on Ubuntu (gcc)
 
-5a. **Prim's Algorithm**
-   - File: [5a_prims_algorithm.c](https://github.com/shrutin567/Design-and-Analysis-of-Algorithms-Lab/blob/main/5a_prims_algorithm.c)
-   - Description: This program showcases Prim's algorithm for finding the minimum spanning tree of a graph.
+1. Make sure you have GCC (GNU Compiler Collection) installed on your system.
 
-5b. **Kruskal's Algorithm**
-   - File: [5b_kruskals_algorithm.c](https://github.com/shrutin567/Design-and-Analysis-of-Algorithms-Lab/blob/main/5b_kruskals_algorithm.c)
-   - Description: This program demonstrates Kruskal's algorithm to find the minimum spanning tree of a graph.
+2. Open a terminal and navigate to the directory containing the program files.
 
-6. **Dijkstra's Algorithm**
-   - File: [6_dijkstras_algorithm.c](https://github.com/shrutin567/Design-and-Analysis-of-Algorithms-Lab/blob/main/6_dijkstras_algorithm.c)
-   - Description: This program implements Dijkstra's algorithm to find the shortest paths from a source vertex to all other vertices in a weighted graph.
+3. Compile a program using the following command (replace `<program_file.c>` with the actual filename):
 
-7. **0/1 Knapsack Problem (Dynamic Programming)**
-   - File: [7_integral_knapsack.c](https://github.com/shrutin567/Design-and-Analysis-of-Algorithms-Lab/blob/main/7_integral_knapsack.c)
-   - Description: This program solves the 0/1 knapsack problem using a dynamic programming approach.
+   ```
+   gcc -o output <program_file.c>
+   ```
 
-8. **Traveling Salesman Problem (Nearest Neighbour)**
-   - File: [8_travelling_salesman_problem_nearest_neighbour.c](https://github.com/shrutin567/Design-and-Analysis-of-Algorithms-Lab/blob/main/8_travelling_salesman_problem_nearest_neighbour.c)
-   - Description: This program uses the nearest neighbour algorithm to solve the Traveling Salesman Problem.
+4. Run the compiled program using:
 
-9. **Floyd-Warshall Algorithm**
-   - File: [9_floyd_warshall_algorithm.c](https://github.com/shrutin567/Design-and-Analysis-of-Algorithms-Lab/blob/main/9_floyd_warshall_algorithm.c)
-   - Description: This program demonstrates the Floyd-Warshall algorithm for the all-pairs shortest path problem in a weighted graph.
+   ```
+   ./output
+   ```
 
-**Running on Ubuntu (using GCC):**
-1. Clone the repository: `git clone https://github.com/shrutin567/Design-and-Analysis-of-Algorithms-Lab.git`
-2. Navigate to the desired program's directory: `cd Design-and-Analysis-of-Algorithms-Lab`
-3. Compile the program: `gcc filename.c -o output_filename`
-4. Run the compiled program: `./output_filename`
+### Online Compilers
 
-**Online Compilers:**
-1. [Online GDB](https://www.onlinegdb.com/online_c_compiler)
-2. [Programiz C Compiler](https://www.programiz.com/c-programming/online-compiler)
-3. [Ideone](https://ideone.com/), etc.
+You can also run these programs on various online compilers and debuggers. Here are a few options:
 
-Simply copy and paste the code from the respective `.c` files linked above into these online compilers and follow their instructions to compile and run the programs.
+1. **Online GDB**: An online debugger and compiler based on the GNU Debugger.
+   - Link: [Online GDB](https://www.onlinegdb.com/online_c_compiler)
+   - Copy and paste the code into the editor, then compile and run.
+
+2. **Programiz**: An online code editor and compiler.
+   - Link: [Programiz C Compiler](https://www.programiz.com/c-programming/online-compiler/)
+   - Paste the code into the editor and hit the "Compile and Run" button.
+
+3. **Ideone**: An online compiler and debugging tool.
+   - Link: [Ideone](https://ideone.com/)
+   - Paste the code into the editor and click the "Run" button.
